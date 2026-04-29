@@ -19,12 +19,13 @@ def home():
 
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    df = pd.read_csv("spam (1).csv", encoding="latin-1")
+    df = pd.read_csv("spam.csv", encoding="latin-1")
+    print(df.columns)
     df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
     # Features and Labels
 
     df['label'] = df['class'].map({'ham': 0, 'spam': 1})
-    X = df['message']
+    X = df['text']
     y = df['label']
     # Extract Feature With CountVectorizer
     cv = CountVectorizer()
@@ -45,4 +46,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)

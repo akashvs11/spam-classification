@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Spam Classification📧 [![](https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg)](https://github.com/Spidy20/Image_Filters_GUI/blob/master/LICENSE)
 
 
@@ -25,3 +26,6 @@
 # [Buy me a Coffee☕](https://www.buymeacoffee.com/spidy20)
 ## [Donate me on PayPal(It will inspire me to do more projects)](https://www.paypal.me/spidy1820)
 ## Donate me on GPAY:- kushalbhavsar58-1@okaxis
+=======
+# spam-classification
+>>>>>>> bdb5119eca6372b3b284c989c18fcdab2877c81b
